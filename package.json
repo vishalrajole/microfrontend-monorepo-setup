@@ -1,0 +1,19 @@
+{
+  "name": "microfrontend-architecture",
+  "version": "1.0.0",
+  "description": "microfrontend-architecture with lerna monorepo",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"lerna run --scope @demo/* --parallel start\"",
+    "build": "lerna run --scope @demo/* build",
+    "serve": "lerna run --scope @demo/* --parallel serve",
+    "clean": "lerna run --scope @demo/* --parallel clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "lerna": "^3.21.0"
+  }
+}
